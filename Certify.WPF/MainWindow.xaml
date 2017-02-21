@@ -22,7 +22,6 @@
         </Grid.RowDefinitions>
         <Menu x:Name="menu" HorizontalAlignment="Stretch" Height="30 " VerticalAlignment="Top" FontSize="11">
             <MenuItem Header="File" Height="30">
-
                 <Separator HorizontalAlignment="Left" Width="140"/>
                 <MenuItem Header="Reload Vault" HorizontalAlignment="Left" Width="140" Height="20" FontSize="11"/>
                 <Separator HorizontalAlignment="Left" Width="140"/>
@@ -31,24 +30,63 @@
         </Menu>
         <Menu Background="{DynamicResource PrimaryHueLightBrush}" x:Name="Menu" HorizontalAlignment="Stretch" Height="30" VerticalAlignment="Top" FontSize="11" Grid.Row="0" BorderBrush="#FFD4D4D4" BorderThickness="0,0,0,1">
             <MenuItem Header="File" Height="30">
-                <MenuItem Header="New..." HorizontalAlignment="Left" Height="20" FontSize="11">
-                    <MenuItem Header="Contact Registration..." HorizontalAlignment="Stretch"  Height="20" FontSize="11"/>
-                    <MenuItem Header="Domain Certificate..." HorizontalAlignment="Stretch"  Height="20" FontSize="11"/>
+                <MenuItem Header="New" HorizontalAlignment="Left" Height="20" FontSize="11">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon Kind="Plus"  />
+                    </MenuItem.Icon>
+                    <MenuItem Header="Contact Registration" HorizontalAlignment="Stretch"  Height="20" FontSize="11">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContactMail"  />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Domain Certificate" HorizontalAlignment="Stretch"  Height="20" FontSize="11">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Certificate"  />
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
                 <Separator HorizontalAlignment="Stretch" />
-                <MenuItem Header="Reload Vault" HorizontalAlignment="Left"  Height="20" FontSize="11"/>
+                <MenuItem Header="Reload Vault" HorizontalAlignment="Left"  Height="20" FontSize="11">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon Kind="Reload" />
+                    </MenuItem.Icon>
+                </MenuItem>
                 <Separator HorizontalAlignment="Stretch"/>
-                <MenuItem Header="Exit" HorizontalAlignment="Stretch" Height="20" FontSize="11"/>
+                <MenuItem Header="Exit" HorizontalAlignment="Stretch" Height="20" FontSize="11">
+                    <MenuItem.Icon>
+                    <materialDesign:PackIcon Kind="ExitToApp" />
+                </MenuItem.Icon>
+            </MenuItem>
             </MenuItem>
             <MenuItem Header="Options" Height="30">
-                <MenuItem Header="Settings..." HorizontalAlignment="Left" Height="20" FontSize="11"/>
-                <MenuItem Header="Cleanup Vault..." HorizontalAlignment="Left" Width="140" Height="20" FontSize="11"/>
+                <MenuItem Header="Settings" HorizontalAlignment="Left" Height="20" FontSize="11">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon Kind="Settings"  />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Cleanup Vault" HorizontalAlignment="Left" Height="20" FontSize="11">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon Kind="DeleteSweep"  />
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
             <MenuItem Header="Help" Height="30">
-                <MenuItem Header="Support" HorizontalAlignment="Left"  Height="20" FontSize="11"/>
-                <MenuItem Header="Check For Updates..." HorizontalAlignment="Left"  Height="20" FontSize="11"/>
+                <MenuItem Header="Check For Updates" HorizontalAlignment="Left"  Height="20" FontSize="11">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon Kind="Import"  />
+                    </MenuItem.Icon>
+                </MenuItem>
                 <Separator HorizontalAlignment="Stretch"/>
-                <MenuItem Header="About" HorizontalAlignment="Left" Height="20" FontSize="11"/>
+                <MenuItem Header="Support" HorizontalAlignment="Left"  Height="20" FontSize="11">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon Kind="HelpCircle"  />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="About" HorizontalAlignment="Left" Height="20" FontSize="11">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon Kind="Information"  />
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
         </Menu>
 
