@@ -8,7 +8,8 @@ Features:
 - Easy certificate requests & automated SSL bindings
 - Auto renewal, with configurable renewal frequency
 - SAN support (multi-domain certificates)
-- Pre/Post request powershell and web hook support ![scripting hooks](https://github.com/webprofusion/certify/blob/master/docs/Request%20Script%20Hooks.md) for advanced users (feature contributed by [Marcus-L](https://github.com/Marcus-L))
+- Pre/Post request powershell and web hook support ![scripting hooks](https://github.com/webprofusion/certify/blob/master/docs/Request%20Script%20Hooks.md) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPrerequisite%2FCertify.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FPrerequisite%2FCertify?ref=badge_shield)
+for advanced users (feature contributed by [Marcus-L](https://github.com/Marcus-L))
 
 ![App Screenshot](https://certifytheweb.com/images/screen3.png)
 
@@ -59,3 +60,7 @@ git submodule update --init --recursive --remote
 > The app consists of a UI and background service. The background service must be running for the UI to operatre. The develop/debug you can configure Visual Studio to launch both the UI and Service - Right Click the Solution > Properties> Startup Project, Set Certify.UI and Certify.Service to 'Start', then debug as normal. 
 apps {at} webprofusion.com
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPrerequisite%2FCertify.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPrerequisite%2FCertify?ref=badge_large)
